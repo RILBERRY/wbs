@@ -22,7 +22,7 @@
                 <div class="justify-start items-center gap-1.5 flex">
                     <div class="px-2.5 py-1.5 flex-col justify-start items-center gap-0.5 inline-flex">
                         <div class="text-white text-[12px] font-normal">Ali Rilwan</div>
-                        <div class="text-white text-[10px] font-normal">Admin Officer</div>
+                        <div class="text-white text-[10px] font-normal">Developer</div>
                     </div>
                     <img class="w-[30px] h-[30px] rounded-[25px]" src="https://via.placeholder.com/30x30" />
                 </div>
