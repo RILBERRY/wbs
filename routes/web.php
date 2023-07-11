@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,7 @@ Route::get('/billing', function () {
 Route::get('/settlement', function () {
     return view('app.settlement.index');
 });
-Route::get('/setting', function () {
-    return view('app.setting.index');
+Route::prefix('/setting')->group(function () {
+    Route::get('{setting}', [SettingsController::Class,'index'])->name('setting.index');
+
 });

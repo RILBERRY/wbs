@@ -20,6 +20,12 @@
                     </defs>
                 </svg>
             </div>
+            <div class=" px-5 py-2 bg-green-600 rounded-lg justify-start items-center gap-2 inline-flex">
+                <div class=" relative">
+
+                </div>
+                <div class="text-center text-white text-[12px] font-normal">Bulk Settlement</div>
+            </div>
         </div>
     </div>
 

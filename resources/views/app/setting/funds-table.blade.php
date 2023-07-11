@@ -1,6 +1,6 @@
 <div class="w-full px-[41px] py-2.5 bg-white rounded-lg flex-col justify-start items-start inline-flex">
     <div class="self-stretch h-14 p-2.5 justify-between items-center gap-2.5 inline-flex">
-        <div class="text-black text-[16px] font-bold">Address</div>
+        <div class="text-black text-[16px] font-bold">Funds</div>
         <div class="p-2.5 justify-center items-center gap-2.5 flex">
             <div class="h-[37px] rounded-lg border-neutral-400 justify-start items-start gap-2.5 flex">
                 <input class="text-neutral-400 text-[14px] font-normal p-1.5 border rounded-md" placeholder="Search" type="text">
@@ -20,12 +20,11 @@
             <div class=" px-5 py-2 bg-green-600 rounded-lg justify-start items-center gap-2 inline-flex">
                 <div class=" relative">
                     <svg width="100%" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Location on" clip-path="url(#clip0_113_701)">
-                        <path id="Vector" d="M10 2.16675C6.77501 2.16675 4.16667 4.77508 4.16667 8.00008C4.16667 12.3751 10 18.8334 10 18.8334C10 18.8334 15.8333 12.3751 15.8333 8.00008C15.8333 4.77508 13.225 2.16675 10 2.16675ZM10.1042 12.1667C6.04167 12.2965 6.45834 7.79175 6.45834 7.79175L10.1042 4.45841L13.75 7.79175C13.75 7.79175 14.1667 12.037 10.1042 12.1667Z" fill="white"/>
-                        <path id="Rectangle 5" d="M6.875 10.7084L6.25 7.79175H7.5V10.7084H9.375V8.52091H10.8333V10.7084H12.7083V7.79175H14.1667L13.5417 10.7084V12.1667H6.875V10.7084Z" fill="white"/>
+                        <g id="Account balance wallet" clip-path="url(#clip0_148_856)">
+                        <path id="Vector" d="M17.5 15.5V16.3333C17.5 17.25 16.75 18 15.8333 18H4.16667C3.24167 18 2.5 17.25 2.5 16.3333V4.66667C2.5 3.75 3.24167 3 4.16667 3H15.8333C16.75 3 17.5 3.75 17.5 4.66667V5.5H10C9.075 5.5 8.33333 6.25 8.33333 7.16667V13.8333C8.33333 14.75 9.075 15.5 10 15.5H17.5ZM10 13.8333H18.3333V7.16667H10V13.8333ZM13.3333 11.75C12.6417 11.75 12.0833 11.1917 12.0833 10.5C12.0833 9.80833 12.6417 9.25 13.3333 9.25C14.025 9.25 14.5833 9.80833 14.5833 10.5C14.5833 11.1917 14.025 11.75 13.3333 11.75Z" fill="white"/>
                         </g>
                         <defs>
-                        <clipPath id="clip0_113_701">
+                        <clipPath id="clip0_148_856">
                         <rect width="100%" height="20" fill="white" transform="translate(0 0.5)"/>
                         </clipPath>
                         </defs>
@@ -36,48 +35,23 @@
         </div>
     </div>
     <div class="self-stretch p-2.5 bg-zinc-100 border border-white border-b-gray-800 justify-start items-start gap-2.5 inline-flex">
-        <div class="w-2/6 text-left text-[15px] font-normal">House Name</div>
-        <div class="w-2/6 text-center text-[15px] font-normal">Long</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">Lat</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">Status</div>
+        <div class="w-2/6 text-left text-[15px] font-normal">User Name</div>
+        <div class="w-2/6 text-center text-[15px] font-normal">House Name</div>
+        <div class="w-1/6 text-center text-[15px] font-normal">Staus</div>
+        <div class="w-1/6 text-center text-[15px] font-normal">User Type</div>
     </div>
     <div class="hover:bg-gray-200 cursor-pointer self-stretch justify-start items-start p-3 inline-flex border border-white border-b-gray-400">
-        <div class="w-2/6 text-left text-[15px] font-normal">Dhonbashige</div>
-        <div class="w-2/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">null</div>
+        <div class="w-2/6 text-left text-[15px] font-normal">Ali RIlwan</div>
+        <div class="w-2/6 text-center text-[15px] font-normal">Dhonbashige</div>
         <div class="w-1/6 text-center text-[15px] font-normal">Active</div>
+        <div class="w-1/6 text-center text-[15px] font-normal">Admin</div>
     </div>
     <div class="hover:bg-gray-200 cursor-pointer self-stretch justify-start items-start p-3 inline-flex border border-white border-b-gray-400">
-        <div class="w-2/6 text-left text-[15px] font-normal">Dhonbashige</div>
-        <div class="w-2/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">null</div>
+        <div class="w-2/6 text-left text-[15px] font-normal">Ali RIlwan</div>
+        <div class="w-2/6 text-center text-[15px] font-normal">Dhonbashige</div>
         <div class="w-1/6 text-center text-[15px] font-normal">Active</div>
+        <div class="w-1/6 text-center text-[15px] font-normal">Admin</div>
     </div>
-    <div class="hover:bg-gray-200 cursor-pointer self-stretch justify-start items-start p-3 inline-flex border border-white border-b-gray-400">
-        <div class="w-2/6 text-left text-[15px] font-normal">Dhonbashige</div>
-        <div class="w-2/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">Active</div>
-    </div>
-    <div class="hover:bg-gray-200 cursor-pointer self-stretch justify-start items-start p-3 inline-flex border border-white border-b-gray-400">
-        <div class="w-2/6 text-left text-[15px] font-normal">Dhonbashige</div>
-        <div class="w-2/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">Active</div>
-    </div>
-    <div class="hover:bg-gray-200 cursor-pointer self-stretch justify-start items-start p-3 inline-flex border border-white border-b-gray-400">
-        <div class="w-2/6 text-left text-[15px] font-normal">Dhonbashige</div>
-        <div class="w-2/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">Active</div>
-    </div>
-    <div class="hover:bg-gray-200 cursor-pointer self-stretch justify-start items-start p-3 inline-flex border border-white border-b-gray-400">
-        <div class="w-2/6 text-left text-[15px] font-normal">Dhonbashige</div>
-        <div class="w-2/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">null</div>
-        <div class="w-1/6 text-center text-[15px] font-normal">Active</div>
-    </div>
-
     <div class="w-full p-2 justify-end items-center gap-2.5 inline-flex">
         <div class="px-2.5 justify-center items-center gap-2.5 flex">
             <button class="w-10 relative hover:bg-gray-200 p-2 rounded-md ">
