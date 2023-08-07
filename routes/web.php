@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::prefix('/mobile')->group(function () {
+    Route::get('/', function () {
+        return view('fms.quick-access');
+    });
+
+    Route::get('/invoice', function () {
+        return view('fms.form.invoice');
+    });
+});
+
 Route::get('/', function () {
     return view('app.dashboard');
 });
