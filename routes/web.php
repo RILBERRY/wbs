@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\FundsController;
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +24,8 @@ Route::get('/billing', function () {
 Route::get('/settlement', function () {
     return view('app.settlement.index');
 });
+Route::get('/setting/{setting}', [SettingsController::class,'settingPage'])->name('setting');  
+
 Route::get('/setting', function () {
-    return view('app.setting.index');
+    return redirect('/setting/users');
 });

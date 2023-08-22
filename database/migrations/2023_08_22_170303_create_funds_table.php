@@ -11,25 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('funds', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('mobile');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->boolean('is_active')->default('true');
-            $table->boolean('is_admin')->default('fales');
-            $table->rememberToken();
+            $table->string('fund_type');
+            $table->string('account_number')->nullable();
+            $table->boolean('status')->default('false');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('funds');
     }
 };

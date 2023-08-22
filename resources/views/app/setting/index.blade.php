@@ -1,13 +1,13 @@
 @extends('main')
 @section('content')
-
+<livewire:funds-form>
 <div class="w-11/12 mx-auto mt-10 rounded-lg flex-col justify-start items-start space-y-5 ">
     <div class="w-full h-[89px] px-[41px] py-2.5 bg-white rounded-lg flex-col justify-start items-start gap-2.5 inline-flex">
         <div class="self-stretch h-[69px] p-2.5 justify-between items-center gap-2.5 inline-flex">
             <div class="text-black text-[24px] font-bold">Setting</div>
             <div class=" justify-end items-center gap-2.5 flex">
-                <div class="w-32 px-2.5 py-[9px] bg-fuchsia-900 rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
-                    onclick="navTo('users')"
+                <div class="w-32 px-2.5 py-[9px] {{$componentName=='user-table'?'bg-fuchsia-900':'bg-zinc-500'}} rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
+                    onclick="navTo('/setting/users')"
                 >
                     <div class="w-5 h-5 relative">
                         <svg width="100%" height="100%" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,8 +24,8 @@
                     </div>
                     <div class="text-center text-white text-[12px] font-normal">Users</div>
                 </div>
-                <div class="w-32 px-2.5 py-[9px] bg-zinc-500 rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
-                    onclick="navTo('permission')"
+                <div class="w-32 px-2.5 py-[9px] {{$componentName=='permission-table'?'bg-fuchsia-900':'bg-zinc-500'}} rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
+                    onclick="navTo('/setting/permission')"
                 >
                     <div class="w-5 h-5 relative">
                         <svg width="100%" height="100%" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,8 +41,8 @@
                     </div>
                     <div class="text-center text-white text-[12px] font-normal">Permission</div>
                 </div>
-                <div class="w-32 px-2.5 py-[9px] bg-zinc-500 rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
-                    onclick="navTo('address')"
+                <div class="w-32 px-2.5 py-[9px] {{$componentName=='address-table'?'bg-fuchsia-900':'bg-zinc-500'}} rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
+                    onclick="navTo('/setting/address')"
                 >
                     <div class="w-5 h-5 relative">
                         <svg width="100%" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,8 +59,8 @@
                     </div>
                     <div class="text-center text-white text-[12px] font-normal">Address</div>
                 </div>
-                <div class="w-32 px-2.5 py-[9px] bg-zinc-500 rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
-                    onclick="navTo('plans')"
+                <div class="w-32 px-2.5 py-[9px] {{$componentName=='price-plans-table'?'bg-fuchsia-900':'bg-zinc-500'}} rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
+                    onclick="navTo('/setting/plans')"
                 >
                     <div class="w-5 h-5 relative">
                         <svg width="100%" height="100%" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +71,8 @@
                     </div>
                     <div class="text-center text-white text-[12px] font-normal">Price Plans</div>
                 </div>
-                <div class="w-32 px-2.5 py-[9px] bg-zinc-500 rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
-                    onclick="navTo('fund')"
+                <div class="w-32 px-2.5 py-[9px]  {{ $componentName == 'funds-table'?'bg-fuchsia-900':'bg-zinc-500'}} rounded-lg hover:bg-fuchsia-900 cursor-pointer justify-start items-center gap-2 flex"
+                    onclick="navTo('/setting/funds')"
                 >
                     <div class="w-5 h-5 relative">
                         <svg width="100%" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,13 +94,13 @@
 
     </div>
 
-    @component('app.setting.price-plans-table')@endcomponent
+    @component('app.setting.'.$componentName )@endcomponent
 
 
 </div>
 <script>
-    function navTo(to){
-
+    function navTo(toUrl){
+        window.location.replace(toUrl)
     }
 </script>
 @endsection
