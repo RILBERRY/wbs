@@ -13,10 +13,10 @@
             <div class="w-full px-10 py-4 left-0 top-0 relative bg-fuchsia-900 justify-start sm:items-center gap-2.5 inline-flex">
                 <img class="w-[30px] h-[30px] rounded-lg"  src="{{asset('/icon/logo.png')}}"/>
                 <div class="sm:w-[600px] justify-between items-start gap-2.5 flex-col sm:flex-row overflow-hidden h-8 hidden flex sm:flex transition-all" id="navBar">
-                    <a href="/" class= " hover:bg-fuchsia-800 rounded-md p-2 grow shrink basis-0  text-center text-white text-[13px] font-normal">Dashboard</a>
-                    <a href="/billing" class=" hover:bg-fuchsia-800 rounded-md p-2 grow shrink basis-0  text-center text-white text-[13px] font-normal">Billing</a>
-                    <a href="/settlement" class=" hover:bg-fuchsia-800 rounded-md p-2 grow shrink basis-0  text-center text-white text-[13px] font-normal">Settlement</a>
-                    <a href="/setting/users" class=" hover:bg-fuchsia-800 rounded-md p-2 grow shrink basis-0  text-center text-white text-[13px] font-normal">Setting</a>
+                    <a href="/" class= " hover:bg-fuchsia-800 rounded-md p-2 grow shrink basis-0  text-center text-white text-sm font-normal">Dashboard</a>
+                    <a href="/billing" class=" hover:bg-fuchsia-800 rounded-md p-2 grow shrink basis-0  text-center text-white text-sm font-normal">Billing</a>
+                    <a href="/settlement" class=" hover:bg-fuchsia-800 rounded-md p-2 grow shrink basis-0  text-center text-white text-sm font-normal">Settlement</a>
+                    <a href="/setting/users" class=" hover:bg-fuchsia-800 rounded-md p-2 grow shrink basis-0  text-center text-white text-sm font-normal">Setting</a>
                 </div>
                 <div class="justify-start gap-1.5 flex ml-auto ">
                     <div class="px-2.5 py-1.5 flex-col justify-start gap-0.5 hidden  md:inline-flex">

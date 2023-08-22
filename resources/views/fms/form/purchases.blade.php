@@ -2,13 +2,13 @@
 @section('content')
     <div class="w-full rounded-[10px] border border-stone-300 flex-col justify-start items-center flex">
         <div class="self-stretch p-2 bg-blue-500 rounded-tl-[10px] rounded-t-[10px] justify-center items-center gap-2.5 inline-flex">
-            <div class="grow shrink basis-0 self-stretch text-white text-xl font-bold">Invoice</div>
+            <div class="grow shrink basis-0 self-stretch text-white text-xl font-bold">Purchases</div>
             <button class="grow shrink basis-0 self-stretch text-right text-white text-sm font-bold">Done</button>
         </div>
         <div class="self-stretch px-[17px] py-2.5 border-b border-zinc-400 flex-col justify-start items-center gap-2.5 flex">
-            <div class="self-stretch h-4 text-black text-sm font-bold">Customer Info</div>
+            <div class="self-stretch h-4 text-black text-sm font-bold">Supplyer Info</div>
             <input class="self-stretch p-2.5 rounded-[10px] border border-stone-300 justify-center items-center gap-2.5 inline-flex"
-            placeholder="Invoice No">
+            placeholder="Purchases No">
             <div class="self-stretch justify-center items-start gap-2.5 inline-flex">
                 <input class="w-full p-2.5 rounded-[10px] border border-stone-300 justify-center items-center gap-2.5 inline-flex"
                 placeholder="Date" type=date>
@@ -16,7 +16,7 @@
                 placeholder="Bill No" pattern="\d*">
             </div>
             <input class="self-stretch p-2.5 rounded-[10px] border border-stone-300 justify-center items-center gap-2.5 inline-flex"
-            placeholder="Customer Name">
+            placeholder="Supplyer Name">
             <input class="self-stretch p-2.5 rounded-[10px] border border-stone-300 justify-center items-center gap-2.5 inline-flex"
             placeholder="Contact" pattern="\d*">
         </div>

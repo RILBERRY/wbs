@@ -22,6 +22,15 @@ Route::prefix('/mobile')->group(function () {
     Route::get('/invoice', function () {
         return view('fms.form.invoice');
     });
+    Route::get('/stock-closing', function () {
+        return view('fms.form.stock-closing');
+    });
+    Route::get('/delivery-note', function () {
+        return view('fms.form.delivery-note');
+    });
+    Route::get('/purchase', function () {
+        return view('fms.form.purchases');
+    });
 });
 
 Route::get('/', function () {
